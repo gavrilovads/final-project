@@ -1,0 +1,50 @@
+.card-picture {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+}
+
+.registry-item-wrapper {
+  background-color: var(--light-green);
+  box-shadow: var(--my-shadow);
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.registry-item-wrapper:hover {
+  box-shadow: var(--hover-shadow);
+  transform: translateX(1px);
+}
+
+.reserved {
+  color: var(--light-yellow);
+  cursor: not-allowed;
+}
+
+.reserved-card {
+  background-color: var(--primary-green);
+  color: var(--background-color);
+}
+
+.item-name {
+  font-weight: 600;
+  padding: 4px;
+}
+.item-description {
+  padding: 4px;
+}
+
+.reserve-icon {
+  font-size: 2rem;
+}
+
+.clean-button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+.clean-button:hover {
+  color: var(--secondary-green);
+}

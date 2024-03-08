@@ -1,0 +1,38 @@
+.login-form-wrapper {
+  padding: 40px;
+  background-color: var(--light-green);
+  box-shadow: var(--my-shadow);
+  border-radius: 20px;
+}
+
+.form-inputs-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.form-inputs-wrapper > *:nth-child(odd) {
+  justify-self: end;
+  padding: 4px 16px 4px 0;
+}
+
+.form-inputs-wrapper > *:nth-child(even) {
+  justify-self: start;
+}
+
+.login-window-footer {
+  display: flex;
+
+  justify-content: flex-end;
+}
+
+.login-form-header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 12px;
+}
+
+.hidden {
+  visibility: hidden;
+}

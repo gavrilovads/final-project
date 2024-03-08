@@ -1,0 +1,330 @@
+:root {
+  --background-color: #f4f7f5;
+  --primary-green: #2f4b26;
+  --secondary-green: #6d9f71;
+  --primary-brown: #482728;
+  --primary-blushPink: #a07178;
+  --primary-text: #110b11;
+  --secondary-text: #2d2327;
+  --light-blue: #a2bce0;
+  --light-yellow: #eeb868;
+  --light-green: #d4e2d5;
+  --hover-green: #c5e0c7;
+
+  background-color: var(--background-color);
+
+  --my-shadow: 1px 1px 4px 0 #00000010;
+  --hover-shadow: 1px 1px 6px 0 #6d9f7191;
+
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  display: flex;
+  /* align-items: center; */
+  justify-content: flex-start;
+  flex-direction: column;
+
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+.button {
+  width: 120px;
+  padding: 12px 8px;
+  border-radius: 20px;
+  /* border: 1px solid var(--secondary-green); */
+  border: none;
+  /* box-shadow: var(--my-shadow); */
+}
+
+.primary-button {
+  background-color: var(--primary-green);
+  color: var(--background-color);
+  font-weight: 600;
+}
+
+.secondary-button {
+  background-color: var(--background-color);
+  color: var(--primary-text);
+}
+
+.button:hover {
+  /* background-color: var(--secondary-green);
+  border: 1px solid var(--secondary-green); */
+  box-shadow: var(--hover-shadow);
+}
+
+.button:active {
+  transform: translateX(1px);
+}
+
+.cinzel-decorative-bold {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+footer {
+  display: flex;
+  background-color: var(--light-green);
+  padding: 12px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.playlist-page,
+.rsvp-page,
+.no-page,
+.single-page {
+  padding-top: 160px;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-section {
+  padding-top: 160px;
+}
+
+.secondary-page-header {
+  font-size: 1.4rem;
+  padding: 16px 0 24px 0;
+  max-width: 720px;
+  min-width: 240px;
+}
+
+.large-button {
+  width: 160px;
+}
+
+.rsvp-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  font-size: 1.6rem;
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--secondary-green);
+}
+
+.greenery {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.greenery-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.card-button {
+  width: 2rem;
+  height: 2rem;
+  padding: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-green);
+  background-color: var(--light-green);
+  border: none;
+  border-radius: 20px;
+}
+
+.card-button:hover {
+  background-color: var(--secondary-green);
+}
+
+.card-button:active {
+  transform: translateX(1px);
+}
+
+.music-key {
+  height: 140px;
+}
+
+.form-input {
+  border: none;
+  border-radius: 20px;
+  /* box-shadow: inset var(--my-shadow); */
+  padding: 4px 12px;
+  margin: 4px;
+  height: 1.6rem;
+  width: 100%;
+}
+
+.form-input:focus-visible {
+  box-shadow: var(--my-shadow);
+  outline: 1px solid var(--secondary-green);
+}
+
+.checkbox {
+  border: none;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-input:disabled {
+  background-color: var(--primary-green);
+  opacity: 50%;
+}
+
+.registry-items-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+  padding: 40px 80px;
+}
+
+.projection-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.projection-guests-chart,
+.projection-rsvp-chart {
+  gap: 24px;
+}
+
+.projection-page {
+  height: 100vh;
+  justify-content: center;
+}
+
+.new-item-form-wrapper {
+  align-items: center;
+}
+
+.new-item-form {
+  display: grid;
+  align-items: stretch;
+  grid-template-columns: 5fr 1fr;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  padding: 8px 24px;
+}
+
+.todo-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 12px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-li {
+  list-style-type: none;
+  background-color: var(--light-green);
+  padding: 12px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 460px;
+  box-shadow: var(--my-shadow);
+}
+
+.todo-input {
+  height: 2rem;
+}
+
+.todo-li:hover {
+  transform: translateX(1px);
+  box-shadow: var(--hover-shadow);
+}
+
+.completed-chore {
+  background-color: var(--light-blue);
+  text-decoration: line-through;
+}
+
+.checkbox-label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.wedding-photos-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.media-section-header {
+  padding-bottom: 24px;
+}
+
+a {
+  color: var(--primary-text);
+  text-decoration: none;
+}
+
+.upload-photos {
+  display: flex;
+  justify-items: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.span-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--light-green);
+}

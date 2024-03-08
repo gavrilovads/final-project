@@ -1,0 +1,33 @@
+.error-toast,
+.success-toast {
+  box-shadow: var(--my-shadow);
+  padding: 20px;
+  width: 600px;
+  position: absolute;
+  border-radius: 20px;
+  z-index: 100;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: slideUp 10s forwards;
+}
+
+@keyframes slideUp {
+  from {
+    top: 15%;
+  }
+  to {
+    top: 0%;
+  }
+}
+
+.error-toast {
+  background-color: var(--primary-blushPink);
+}
+
+.success-toast {
+  background-color: var(--light-green);
+}

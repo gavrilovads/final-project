@@ -1,0 +1,6 @@
+.projection-guests-chart,
+.projection-rsvp-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

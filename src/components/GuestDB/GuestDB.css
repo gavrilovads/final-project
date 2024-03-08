@@ -1,0 +1,26 @@
+.table-row {
+  margin: 12px 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr) 2fr 2fr 2fr 1fr 2fr 1fr 1fr 1fr;
+  gap: 4px;
+  align-items: center;
+  justify-items: center;
+  padding: 2px 4px;
+}
+
+.table-header {
+  background-color: var(--light-green);
+  font-weight: 400;
+  padding: 8px;
+  color: var(--secondary-text);
+}
+
+.guest-management-table {
+  padding: 20px;
+  box-shadow: var(--my-shadow);
+  border-radius: 20px;
+}
+
+.table-row:hover {
+  background-color: var(--light-green);
+}

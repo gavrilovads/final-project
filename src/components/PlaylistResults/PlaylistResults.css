@@ -1,0 +1,22 @@
+.playlist-results-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 40px;
+  box-shadow: var(--my-shadow);
+  border-radius: 20px;
+}
+
+.animation-overlay-wrapper {
+  display: grid;
+  grid-template-areas: "stack";
+}
+
+.animation-overlay-wrapper > * {
+  grid-area: stack;
+}
+.playlist-header {
+  display: block;
+}

@@ -1,0 +1,44 @@
+.card-wrapper {
+  background-color: var(--light-green);
+  box-shadow: var(--my-shadow);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+/* .card-image-wrapper {
+  height: 160px;
+  width: 160px;
+  background-color: var(--primary-green);
+} */
+
+.cover-image {
+  height: 180px;
+  width: 180px;
+}
+
+.card-details {
+  padding-top: 8px;
+}
+
+.song-title {
+  color: var(--primary-text);
+  font-weight: 600;
+}
+
+.artist-name {
+  color: var(--secondary-text);
+  font-style: italic;
+}
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.card-wrapper:hover {
+  box-shadow: var(--hover-shadow);
+  transform: translateX(1px);
+}
